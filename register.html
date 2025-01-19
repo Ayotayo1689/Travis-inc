@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travis Inc.</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    style="
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      color: white;
+      overflow: auto;
+      background: linear-gradient(
+        to bottom,
+        #000818,
+        #0b1e41,
+        #0b2555,
+        #223352
+      );
+      margin: 0;
+      padding: 0;
+    "
+  >
+    <div
+      style="height: 100%; overflow: auto; padding-top: 0px"
+      class="container"
+    >
+      <form
+        id="registrationForm"
+        action="https://formspree.io/f/xgvvjjqz"
+        method="POST"
+        class="registration-form"
+      >
+        <h2
+          style="text-align: center; margin-bottom: 1.5rem; margin-top: 1.5rem"
+        >
+          <img src="./logo-white.png" height="90px" alt="" />
+        </h2>
+
+        <h2
+          style="text-align: center; margin-bottom: 1.5rem; margin-top: 1.5rem"
+        >
+          Register With Travis Inc.
+        </h2>
+
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" name="fullName" required />
+        </div>
+
+        <div class="form-group">
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob" required />
+        </div>
+
+        <div class="form-group">
+          <label for="city">City</label>
+          <input type="text" id="city" name="city" required />
+        </div>
+
+        <div class="form-group">
+          <label for="address">Address</label>
+          <input type="text" id="address" name="address" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+
+        <div class="form-group">
+          <label for="ssn">SSN</label>
+          <input type="text" id="ssn" name="ssn" required />
+        </div>
+
+        <div class="form-group">
+          <label for="workplace">Place Of Work</label>
+          <input type="text" id="workplace" name="workplace" required />
+        </div>
+
+        <button
+          id="loader"
+          type="button"
+          class="register-btn hidden"
+          style="width: 100%"
+        >
+          Loading...
+        </button>
+
+        <button
+          id="submit"
+          type="submit"
+          class="register-btn"
+          style="width: 100%"
+        >
+          Submit
+        </button>
+      </form>
+      <div id="thankYouMessage" class="hidden">
+        <h2
+          class=""
+          style="text-align: center; margin-bottom: 1.5rem; margin-top: 1.5rem"
+        >
+          <img src="./logo-white.png" height="90px" alt="" />
+        </h2>
+
+        <div class="thank-you">
+          <h2>Thank you for registering!</h2>
+          <!-- <p>Your information has been submitted successfully.</p> -->
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
